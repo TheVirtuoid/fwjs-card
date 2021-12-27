@@ -1,0 +1,24 @@
+{
+  "name": "fwjs-card",
+  "version": "1.0.0",
+  "description": "Fun With JavaScript: Card class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheVirtuoid/fwjs-card.git"
+  },
+  "keywords": [
+    "javascript",
+    "virtuoid",
+    "card"
+  ],
+  "author": "TheVirtuoid <thevirtuoid@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheVirtuoid/fwjs-card/issues"
+  },
+  "homepage": "https://github.com/TheVirtuoid/fwjs-card#readme"
+}
