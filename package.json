@@ -2,10 +2,11 @@
   "name": "@virtuoid/card",
   "version": "1.0.0",
   "description": "Fun With JavaScript: Card class",
-  "main": "index.js",
+  "main": "dist/Card.js",
   "scripts": {
     "test": "cypress run",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "build": "node builder.js"
   },
   "repository": {
     "type": "git",
