@@ -10,7 +10,7 @@ class Card {
   + rank
   + value
   .. Methods ..
-  Number comparator(Card card)
+  ctor(object)
   Boolean is(Card card)
   Boolean isSuit(Sring suit)
   Boolean isRank(String rank)
