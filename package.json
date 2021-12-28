@@ -6,7 +6,7 @@
   "scripts": {
     "test": "cypress run",
     "cypress:open": "cypress open",
-    "build": "node builder.js"
+    "build": "node builder.js && npm pack"
   },
   "repository": {
     "type": "git",
