@@ -1,5 +1,12 @@
-const { readFileSync, writeFileSync } = require('fs');
+import { readFileSync, writeFileSync } from 'fs';
+const filesToCopy = [
+	{ source: './src/Card.js', destination: './dist/Card.js' },
+	{ source: './exporter.js', destination: './dist/exporter.js' }
+]
 
-const inputFile = readFileSync('./src/Card.js');
-writeFileSync('./dist/Card.js', inputFile);
-console.log('Completed building Card.js');
+filesToCopy.forEach( (file) => {
+	const inputFile = readFileSync(file.source);
+	writeFileSync(file.destination, inputFile);
+	console.log(`...wrote ${file.source} to ${file.destination}`);
+});
+console.log('Done!');

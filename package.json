@@ -2,7 +2,7 @@
   "name": "@virtuoid/card",
   "version": "1.0.2",
   "description": "Fun With JavaScript: Card class",
-  "main": "dist/Card.js",
+  "main": "dist/exporter.js",
   "scripts": {
     "test": "cypress run",
     "cypress:open": "cypress open",
@@ -17,6 +17,7 @@
     "virtuoid",
     "card"
   ],
+  "type": "module",
   "author": "TheVirtuoid <thevirtuoid@gmail.com>",
   "license": "MIT",
   "bugs": {
