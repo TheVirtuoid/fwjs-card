@@ -1,5 +1,6 @@
 /**
  * The base 'Card' class. All games that use anytype of card should extend this class.
+ * Every instance of the class is design to be immutable.
  */
 export default class Card {
 	#suit;
