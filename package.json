@@ -1,12 +1,12 @@
 {
-  "name": "@virtuoid/card",
+  "name": "@virtuoid/cards",
   "version": "1.0.3",
   "description": "Fun With JavaScript: Card class",
-  "main": "dist/exporter.js",
+  "main": "dist/Cards.min.js",
   "scripts": {
     "test": "cypress run",
     "cypress:open": "cypress open",
-    "build": "node builder.js && npm pack"
+    "build": "npx rollup --config"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,9 @@
   },
   "homepage": "https://github.com/TheVirtuoid/fwjs-card#readme",
   "devDependencies": {
-    "cypress": "^9.2.0"
-  }
+    "cypress": "^9.2.0",
+    "rollup": "^2.64.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "type": "module"
 }
