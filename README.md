@@ -5,7 +5,7 @@ This repository is for the 'Card' classes used in the Fun with JavaScript series
 ## Installation
 
 ```
-npm install --save-dev @virtuoid/card
+npm install --save-dev @virtuoid/cards
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ There is currently 1 Card class associated with this repository:
 ### Base Class (Card)
 
 ```javascript
-import { Card } from '@virtuoid/card';
+import { Card } from '@virtuoid/cards';
 
 const suit = 'mySuit';          // this can be any string
 const rank = 'myRank';          // this can be any string

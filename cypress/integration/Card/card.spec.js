@@ -1,4 +1,4 @@
-import Card from './../../../src/Card/Card.js';
+import { Card } from './../../../src/Card/Card.js';
 
 const baseCard = {
 	suit: 'suit',
