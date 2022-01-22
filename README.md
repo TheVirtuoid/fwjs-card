@@ -5,7 +5,7 @@ This repository is for the 'Card' classes used in the Fun with JavaScript series
 ## Installation
 
 ```
-npm install --save-dev @virtuoid/cards
+npm install --save @virtuoid/cards
 ```
 
 ## Usage
