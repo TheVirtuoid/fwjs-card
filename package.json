@@ -1,6 +1,6 @@
 {
   "name": "@virtuoid/cards",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Fun With JavaScript: Card class",
   "main": "dist/Cards.min.js",
   "scripts": {
