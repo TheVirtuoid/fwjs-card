@@ -37,14 +37,10 @@ describe('card creation', () => {
 			expect(err.name).to.equal('TypeError');
 		}
 	});
-	it('should NOT be able to change the value', () => {
+	it('should be able to change the value', () => {
 		const card = new Card(baseCard);
-		try {
-			card.value = 2;
-			expect(true).to.be.false;
-		} catch(err) {
-			expect(err.name).to.equal('TypeError');
-		}
+		card.value = 2;
+		expect(card.value).to.equal(2);
 	});
 });
 

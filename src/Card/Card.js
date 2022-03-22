@@ -46,6 +46,14 @@ export class Card {
 	}
 
 	/**
+	 * Setter to change 'value'
+	 * @param newValue<*>
+	 */
+	set value(newValue) {
+		this.#value = newValue;
+	}
+
+	/**
 	 * Tests the suit,rank, and value of the current card against the argument
 	 * @param {Card} card
 	 * @returns {boolean}
