@@ -4,6 +4,7 @@ This repository is for the 'Card' classes used in the Fun with JavaScript series
 
 ## Versions
 
+1.1.2 : Fixed npm publish error
 1.1.1 : **BREAKING CHANGE** Card is consumed as an ES Module. To use in Node, you will need to enable module loading.
 1.0.0 : Initial Version
 
