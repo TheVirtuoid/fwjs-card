@@ -4,10 +4,16 @@ This repository is for the 'Card' classes used in the Fun with JavaScript series
 
 ## Versions
 
+1.1.4 : Reformat of README file.
+
 1.1.3 : Unfixed npm publish error because I have no idea what I'm doing.
+
 1.1.2 : Fixed npm publish error
+
 1.1.1 : **BREAKING CHANGE** Card is consumed as an ES Module. To use in Node, you will need to enable module loading.
+
 1.0.0 : Initial Version
+
 
 ## Installation
 
@@ -30,20 +36,20 @@ const value = 1;                // this can be any data type
 const myCard = new Card({ suit, rank, value });
 ```
 #### Properties
-| Name | R/W | Description                   |
-|-------| --- |-------------------------------|
-| rank  | RO | The assigned rank of the card |
-| suit  | RO | The assigned suit of the card |
-| value | RO | The assigned value of the card |
+| Name  | R/W | Description                    |
+|-------|-----|--------------------------------|
+| rank  | RO  | The assigned rank of the card  |
+| suit  | RO  | The assigned suit of the card  |
+| value | RO  | The assigned value of the card |
 
 #### Methods
-| Name | Returns | Description|
-| --- | --- | --- |
-| compare(Card card) | undefined | This is meant to be implemented by classes that extend this class. That class will determine the type of comparison that will be made. |
-| is(Card card) | boolean | Returns true if the card argument matches the suit, rank, and value of the current card object |
-| isRank(String rank) | boolean | Returns true if the current card matches the rank |
-| isSuit(String suit) | boolean | Returns true if the current card matches the suit |
-| isValue(any value) | boolean | Returns trus if the current card matches the value. **NOTE:** This only works for the simple data types. If more complex values are needed, then define your own by using the 'compare' method. |
+| Name                | Returns   | Description                                                                                                                                                                                     |
+|---------------------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| compare(Card card)  | undefined | This is meant to be implemented by classes that extend this class. That class will determine the type of comparison that will be made.                                                          |
+| is(Card card)       | boolean   | Returns true if the card argument matches the suit, rank, and value of the current card object                                                                                                  |
+| isRank(String rank) | boolean   | Returns true if the current card matches the rank                                                                                                                                               |
+| isSuit(String suit) | boolean   | Returns true if the current card matches the suit                                                                                                                                               |
+| isValue(any value)  | boolean   | Returns true if the current card matches the value. **NOTE:** This only works for the simple data types. If more complex values are needed, then define your own by using the 'compare' method. |
 
 ## Classes
 
