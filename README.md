@@ -1,8 +1,10 @@
-# Fun With JavaScript - 'Card' classes
+# Fun With JavaScript - 'Card' class
 
 This repository is for the 'Card' classes used in the Fun with JavaScript series.
 
 ## Versions
+
+1.2.0 : Again, changing way the class is consumed. I think I really have it this time.
 
 1.1.4 : Reformat of README file.
 
@@ -23,12 +25,8 @@ npm install --save @virtuoid/cards
 
 ## Usage
 
-There is currently 1 Card class associated with this repository:
-
-### Base Class (Card)
-
 ```javascript
-import { Card } from '@virtuoid/cards';
+import Card from '@virtuoid/cards';
 
 const suit = 'mySuit';          // this can be any string
 const rank = 'myRank';          // this can be any string
@@ -40,7 +38,7 @@ const myCard = new Card({ suit, rank, value });
 |-------|-----|--------------------------------|
 | rank  | RO  | The assigned rank of the card  |
 | suit  | RO  | The assigned suit of the card  |
-| value | RO  | The assigned value of the card |
+| value | RW  | The assigned value of the card |
 
 #### Methods
 | Name                | Returns   | Description                                                                                                                                                                                     |
@@ -51,13 +49,8 @@ const myCard = new Card({ suit, rank, value });
 | isSuit(String suit) | boolean   | Returns true if the current card matches the suit                                                                                                                                               |
 | isValue(any value)  | boolean   | Returns true if the current card matches the value. **NOTE:** This only works for the simple data types. If more complex values are needed, then define your own by using the 'compare' method. |
 
-## Classes
-
-As time goes on, more 'Card' classes will be added to this repository. These directions will be updated as they are added.
-
 ## Github
 
 ```
 https://github.com/TheVirtuoid/fwjs-card
 ```
-
