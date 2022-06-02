@@ -2,7 +2,7 @@
  * The base 'Card' class. All games that use anytype of card should extend this class.
  * Every instance of the class is design to be immutable.
  */
-export class Card {
+export default class Card {
 	#suit;
 	#rank;
 	#value;
@@ -101,5 +101,25 @@ export class Card {
 	 */
 	compare(card) {
 		return undefined;
+	}
+
+	/**
+	 * Outputs the string representation of this instance
+	 * @returns {string}
+	 */
+	toString() {
+		return `${this.rank}${this.suit}`;
+	}
+
+	/**
+	 * Clone card
+	 * @returns {Card}
+	 */
+	clone() {
+		return new (this.constructor)({
+			suit: this.suit,
+			rank: this.rank,
+			value: this.value
+		});
 	}
 }

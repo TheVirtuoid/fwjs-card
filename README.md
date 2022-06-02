@@ -4,6 +4,12 @@ This repository is for the 'Card' classes used in the Fun with JavaScript series
 
 ## Versions
 
+1.4.0 : Added clone() method
+
+1.3.0 : Added toString() method
+
+1.2.1 : Fixed build option so intellisense will work with IDEs.
+
 1.2.0 : Again, changing way the class is consumed. I think I really have it this time.
 
 1.1.4 : Reformat of README file.
@@ -48,9 +54,11 @@ const myCard = new Card({ suit, rank, value });
 | isRank(String rank) | boolean   | Returns true if the current card matches the rank                                                                                                                                               |
 | isSuit(String suit) | boolean   | Returns true if the current card matches the suit                                                                                                                                               |
 | isValue(any value)  | boolean   | Returns true if the current card matches the value. **NOTE:** This only works for the simple data types. If more complex values are needed, then define your own by using the 'compare' method. |
+| toString()          | string    | Returns a string representation of this card (rank + suit)                                                                                                                                      |
+| clone()             | Card      | Makes a complete clone of the Card instance                                                                                                                                                     |
 
 ## Github
-
 ```
 https://github.com/TheVirtuoid/fwjs-card
 ```
+

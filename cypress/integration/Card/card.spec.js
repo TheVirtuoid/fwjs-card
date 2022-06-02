@@ -1,4 +1,4 @@
-import { Card } from './../../../src/Card/Card.js';
+import Card from './../../../src/Card/Card.js';
 
 const baseCard = {
 	suit: 'suit',
@@ -98,3 +98,22 @@ describe('locating card', () => {
 		expect(card.compare(newCard)).to.be.undefined;
 	});
 });
+
+describe('output of card', () => {
+	it('should output the correct card', () => {
+		const card = new Card(baseCard);
+		expect(card.toString()).to.equal(`${baseCard.rank}${baseCard.suit}`);
+	});
+});
+
+describe('cloning the card', () => {
+	it('should clone the card', () => {
+		const card = new Card(baseCard);
+		const newCard = card.clone();
+		expect(newCard).to.not.equal(card);
+		expect(newCard instanceof Card).to.be.true;
+		expect(newCard.suit).to.equal(card.suit);
+		expect(newCard.rank).to.equal(card.rank);
+		expect(newCard.value).to.equal(card.value);
+	});
+})
